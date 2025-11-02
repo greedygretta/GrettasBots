@@ -1,0 +1,22 @@
+{
+  "name": "grettasbots-library-gif",
+  "version": "0.1.0",
+  "description": "Discord bot that posts random library GIFs using Tenor",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "echo \"Add eslint config\"",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
