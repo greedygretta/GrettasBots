@@ -8,6 +8,7 @@
     "dev": "nodemon src/index.js",
     "deploy-commands": "node scripts/deploy-commands.js",
     "deploy-commands:guild": "node scripts/deploy-commands.js --guild",
+    "test-openai": "node scripts/test-openai.js",
     "lint": "echo \"Add eslint config\"",
     "test": "jest"
   },
@@ -16,7 +17,8 @@
   "dependencies": {
     "discord.js": "^14.11.0",
     "dotenv": "^16.0.0",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "openai": "^6.7.0"
   },
   "devDependencies": {
     "jest": "^29.0.0"
