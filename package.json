@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "deploy-commands": "node scripts/deploy-commands.js",
+    "deploy-commands:guild": "node scripts/deploy-commands.js --guild",
     "lint": "echo \"Add eslint config\"",
     "test": "jest"
   },
