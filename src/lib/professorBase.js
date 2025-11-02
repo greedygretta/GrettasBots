@@ -1,35 +1,23 @@
 'use strict';
 const { EmbedBuilder } = require('discord.js');
 const openaiService = require('./openaiService');
+const characterCardManager = require('./characterCards');
 const logger = require('../utils/logger');
-
-const PROFESSOR_CONFIGS = {
-  philosophy: {
-    name: 'Philosophy Professor',
-    icon: '🏛️',
-    color: 0x9B59B6, // Purple
-    systemPrompt: `You are a wise and engaging philosophy professor at a prestigious university. You love the Socratic method and enjoy asking thought-provoking questions to help students think deeply. You reference classical philosophers like Plato, Aristotle, Kant, and Nietzsche when relevant. You're warm, encouraging, and make complex philosophical concepts accessible. Keep responses concise but profound, around 300-400 words. End with a thoughtful question when appropriate.`
-  },
-  latin: {
-    name: 'Latin Professor',
-    icon: '📜',
-    color: 0xE74C3C, // Red
-    systemPrompt: `You are a classical Latin scholar and professor with deep knowledge of Latin grammar, vocabulary, and classical texts. You help students with translations, explain grammatical concepts clearly, and reference works by authors like Cicero, Virgil, and Ovid when relevant. You're patient, precise, and enthusiastic about the beauty of Latin. Provide clear explanations with examples. Keep responses focused and pedagogical, around 300-400 words.`
-  },
-  librarian: {
-    name: 'Research Librarian',
-    icon: '📚',
-    color: 0x3498DB, // Blue
-    systemPrompt: `You are a knowledgeable and friendly research librarian at a university library. You excel at helping people find information, recommending books and resources, and guiding research. You're organized, thorough, and make research accessible and less intimidating. When suggesting resources, be specific but understand you're in a chat context. Keep responses helpful and actionable, around 300-400 words.`
-  }
-};
 
 async function executeProfessorCommand(professorType, question, source) {
   const isInteraction = source.isCommand?.() || source.isChatInputCommand?.();
-  const config = PROFESSOR_CONFIGS[professorType];
-
-  if (!config) {
+  
+  // Get character configuration
+  const character = characterCardManager.getCharacter(professorType);
+  if (!character) {
     throw new Error(`Unknown professor type: ${professorType}`);
+  }
+
+  const systemPrompt = characterCardManager.buildSystemPrompt(professorType);
+  const displayConfig = characterCardManager.getDisplayConfig(professorType);
+  
+  if (!systemPrompt || !displayConfig) {
+    throw new Error(`Failed to load configuration for ${professorType}`);
   }
 
   if (!openaiService.isAvailable()) {
@@ -50,15 +38,15 @@ async function executeProfessorCommand(professorType, question, source) {
   }
 
   try {
-    const result = await openaiService.chat(config.systemPrompt, question);
+    const result = await openaiService.chat(systemPrompt, question);
     
     // Split response if too long (Discord limit is 4096 for embed description)
     const chunks = splitResponse(result.content, 4000);
     
     for (let i = 0; i < chunks.length; i++) {
       const embed = new EmbedBuilder()
-        .setColor(config.color)
-        .setTitle(`${config.icon} ${config.name}`)
+        .setColor(displayConfig.color)
+        .setTitle(`${displayConfig.icon} ${displayConfig.name}`)
         .setDescription(chunks[i])
         .setFooter({ 
           text: chunks.length > 1 
@@ -148,4 +136,4 @@ function truncate(text, maxLength) {
   return text.substring(0, maxLength - 3) + '...';
 }
 
-module.exports = { executeProfessorCommand, PROFESSOR_CONFIGS };
+module.exports = { executeProfessorCommand };
