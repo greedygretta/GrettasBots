@@ -12,7 +12,7 @@ class OpenAIService {
     }
     
     this.client = new OpenAI({ apiKey });
-    this.model = process.env.OPENAI_MODEL || 'gpt-3.5-turbo';
+    this.model = process.env.OPENAI_MODEL || 'gpt-4o-mini';
     this.maxTokens = 800;
   }
 

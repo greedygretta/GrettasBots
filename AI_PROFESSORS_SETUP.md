@@ -63,12 +63,12 @@ Add your OpenAI API key to `.env`:
 OPENAI_API_KEY=sk-your-key-here
 ```
 
-**Optional:** Change the AI model (default is `gpt-3.5-turbo`):
+**Optional:** Change the AI model (default is `gpt-4o-mini`):
 ```env
-OPENAI_MODEL=gpt-4
+OPENAI_MODEL=gpt-4o
 ```
 
-**Note:** GPT-4 is more capable but costs more. GPT-3.5-turbo is recommended for most use cases.
+**Note:** The default `gpt-4o-mini` is the best balance of quality and cost. Use `gpt-4o` for premium quality.
 
 ### 3. Deploy Slash Commands
 
@@ -92,13 +92,15 @@ npm start
 
 OpenAI charges per token (roughly per word). Approximate costs:
 
-**GPT-3.5-turbo:**
-- ~$0.0015 per 1,000 tokens (~750 words)
-- Each professor response: ~$0.001-0.002 (0.1-0.2 cents)
+**GPT-4o-mini (default):**
+- ~$0.00015 input / ~$0.0006 output per 1,000 tokens
+- Each professor response: ~$0.0003-0.0008 (0.03-0.08 cents)
+- **Best value**: 10x cheaper than gpt-3.5-turbo with better quality!
 
-**GPT-4:**
-- ~$0.03 per 1,000 tokens (~750 words)  
-- Each professor response: ~$0.02-0.04 (2-4 cents)
+**GPT-4o (premium):**
+- ~$0.0025 input / ~$0.01 output per 1,000 tokens
+- Each professor response: ~$0.005-0.01 (0.5-1 cent)
+- Use when you need the highest quality responses
 
 ### Cost Management
 
