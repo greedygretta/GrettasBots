@@ -91,7 +91,21 @@ module.exports = {
   - Slash: `/librarygif`
   - Uses external API (Tenor)
   - Creates embed response
-  - Works with both prefix and slash commands
+
+- **philosophy.js**: AI philosophy professor powered by OpenAI
+  - Prefix: `!philosophy <question>`, `!philo <question>`
+  - Slash: `/philosophy <question>`
+  - Requires OPENAI_API_KEY
+
+- **latin.js**: AI Latin professor for translations and grammar
+  - Prefix: `!latin <question>`, `!translate-latin <question>`
+  - Slash: `/latin <question>`
+  - Requires OPENAI_API_KEY
+
+- **librarian.js**: AI research librarian for information help
+  - Prefix: `!librarian <question>`, `!research <question>`
+  - Slash: `/librarian <question>`
+  - Requires OPENAI_API_KEY
 
 ## Slash Command Deployment
 
