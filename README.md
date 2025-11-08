@@ -1,4 +1,4 @@
-# Library GIF Bot
+# Library GIF Awesome Bot
 
 A Discord bot that sends random library-themed GIFs using the Tenor API!
 
