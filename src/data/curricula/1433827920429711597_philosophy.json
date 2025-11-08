@@ -1,0 +1,155 @@
+{
+  "guildId": "1433827920429711597",
+  "professorId": "philosophy",
+  "createdAt": "2025-11-08T11:38:08.156Z",
+  "curriculum": {
+    "title": "Explorations in Ancient Greek Philosophy",
+    "description": "A comprehensive examination of the foundational texts and ideas of Ancient Greek philosophers, focusing on ethics, epistemology, and political philosophy. Students will engage in critical discussions and thought experiments to deepen their understanding of philosophical concepts and their relevance today.",
+    "weeks": [
+      {
+        "week": 1,
+        "topic": "Introduction to Philosophy and Socratic Method",
+        "description": "Overview of philosophy and the Socratic method. Introduction to key philosophical questions.",
+        "readings": [
+          "Plato, 'Apology'",
+          "Socratic dialogues"
+        ],
+        "assignment": "Reflect on a personal belief and explore its justification."
+      },
+      {
+        "week": 2,
+        "topic": "Socrates: Virtue and Knowledge",
+        "description": "Discussion on Socratic ethics and the relationship between knowledge and virtue.",
+        "readings": [
+          "Plato, 'Meno'",
+          "Xenophon, 'Memorabilia'"
+        ],
+        "assignment": "Write a dialogue exploring a moral dilemma."
+      },
+      {
+        "week": 3,
+        "topic": "Plato: The Theory of Forms",
+        "description": "Investigate Plato's Theory of Forms and its implications for knowledge and reality.",
+        "readings": [
+          "Plato, 'Republic' (Book VI)",
+          "Plato, 'Phaedo'"
+        ],
+        "assignment": "Create an argument for or against the existence of abstract forms."
+      },
+      {
+        "week": 4,
+        "topic": "Aristotle: Substance and Essence",
+        "description": "Explore Aristotle's concepts of substance, essence, and his critique of Plato's forms.",
+        "readings": [
+          "Aristotle, 'Metaphysics'",
+          "Aristotle, 'Nicomachean Ethics' (Book I)"
+        ],
+        "assignment": "Compare Aristotle's and Plato's views on reality."
+      },
+      {
+        "week": 5,
+        "topic": "Aristotle's Ethical Theory",
+        "description": "Examine Aristotle's virtue ethics and the concept of the 'Golden Mean'.",
+        "readings": [
+          "Aristotle, 'Nicomachean Ethics' (Books II-IV)",
+          "Selected modern critiques"
+        ],
+        "assignment": "Identify a contemporary ethical issue and apply Aristotle's ethics."
+      },
+      {
+        "week": 6,
+        "topic": "Epicureanism and Stoicism",
+        "description": "Compare and contrast the ethical systems of Epicureanism and Stoicism.",
+        "readings": [
+          "Epicurus, 'Letter to Menoeceus'",
+          "Seneca, 'On the Shortness of Life'"
+        ],
+        "assignment": "Analyze how each philosophy addresses the concept of happiness."
+      },
+      {
+        "week": 7,
+        "topic": "The Sophists: Relativism and Rhetoric",
+        "description": "Investigate the Sophists' views on truth and morality, and their influence on rhetoric.",
+        "readings": [
+          "Protagoras, 'Truth'",
+          "Gorgias, 'On Non-Existence'"
+        ],
+        "assignment": "Debate the merits and pitfalls of relativism."
+      },
+      {
+        "week": 8,
+        "topic": "Plato's Political Philosophy",
+        "description": "Analysis of Plato's ideal state and the role of the philosopher-king.",
+        "readings": [
+          "Plato, 'Republic' (Books VII-X)"
+        ],
+        "assignment": "Design a modern political system inspired by Plato's ideas."
+      },
+      {
+        "week": 9,
+        "topic": "Aristotle's Politics",
+        "description": "Study Aristotle's views on governance and the nature of the state.",
+        "readings": [
+          "Aristotle, 'Politics'",
+          "Selected modern interpretations"
+        ],
+        "assignment": "Evaluate a contemporary political system through Aristotle's lens."
+      },
+      {
+        "week": 10,
+        "topic": "Ethics in the Hellenistic Period",
+        "description": "Explore the development of ethical thought during the Hellenistic period, including Cynicism and Skepticism.",
+        "readings": [
+          "Diogenes, 'Cynic Philosophy'",
+          "Sextus Empiricus, 'Outlines of Pyrrhonism'"
+        ],
+        "assignment": "Write a reflection on the relevance of Cynic principles today."
+      },
+      {
+        "week": 11,
+        "topic": "Plato's Myth of the Cave",
+        "description": "Analyze the allegory of the cave and its implications for knowledge and enlightenment.",
+        "readings": [
+          "Plato, 'Republic' (Book VII)"
+        ],
+        "assignment": "Create a modern allegory that illustrates a similar theme."
+      },
+      {
+        "week": 12,
+        "topic": "Metaphysics and Epistemology",
+        "description": "Delve into the relationship between metaphysics and epistemology in the works of Plato and Aristotle.",
+        "readings": [
+          "Plato, 'Theaetetus'",
+          "Aristotle, 'Posterior Analytics'"
+        ],
+        "assignment": "Discuss how each philosopher defines knowledge."
+      },
+      {
+        "week": 13,
+        "topic": "Philosophy of Language",
+        "description": "Explore how ancient philosophers viewed language and its relation to thought.",
+        "readings": [
+          "Plato, 'Cratylus'",
+          "Aristotle, 'On Interpretation'"
+        ],
+        "assignment": "Examine a language issue through the lens of these texts."
+      },
+      {
+        "week": 14,
+        "topic": "The Legacy of Ancient Greek Philosophy",
+        "description": "Assess the impact of Greek philosophy on later philosophical traditions.",
+        "readings": [
+          "Selected excerpts from later philosophers influenced by Greek thought"
+        ],
+        "assignment": "Present on a philosopher influenced by Greek philosophy."
+      },
+      {
+        "week": 15,
+        "topic": "Final Reflections and Philosophical Inquiry",
+        "description": "Engage in a final discussion synthesizing course themes and personal growth in philosophical thinking.",
+        "readings": [],
+        "assignment": "Submit a reflective essay on your philosophical journey this semester."
+      }
+    ]
+  }
+}
