@@ -84,6 +84,18 @@ A character card is a JSON file that contains detailed information about a profe
 - **Style**: Practical, suggests resources and strategies
 - **File**: `librarian.json`
 
+### 💻 Software Engineering 101 Professor (Professor Alex Chen)
+- **Personality**: Enthusiastic, patient with beginners, encouraging
+- **Specialization**: Programming fundamentals, introductory concepts
+- **Style**: Uses analogies, breaks down complex topics, celebrates progress
+- **File**: `cs101.json`
+
+### ⚙️ Software Engineering 201 Professor (Dr. Sarah Mitchell)
+- **Personality**: Pragmatic, industry-focused, direct but supportive
+- **Specialization**: Design patterns, architecture, best practices
+- **Style**: Shares production stories, discusses trade-offs, challenges students
+- **File**: `cs201.json`
+
 ## Adding a New Professor
 
 1. **Create a new JSON file** in this directory (e.g., `history.json`)

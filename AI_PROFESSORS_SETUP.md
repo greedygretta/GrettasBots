@@ -1,6 +1,6 @@
 # AI Professor Bots Setup Guide
 
-Your bot now includes **3 AI-powered professor bots** that use OpenAI's GPT models to answer questions!
+Your bot now includes **5 AI-powered professor bots** that use OpenAI's GPT models to answer questions!
 
 ## Available Professors
 
@@ -44,6 +44,36 @@ Get research help, book recommendations, and information guidance.
 /librarian I need sources on climate change
 !research What are good books about ancient Rome?
 !ask-librarian How do I cite sources in APA format?
+```
+
+### 💻 Software Engineering 101 Professor
+Learn programming fundamentals with a patient, beginner-friendly instructor.
+
+**Commands:**
+- Slash: `/cs101 <question>`
+- Prefix: `!cs101 <question>`, `!coding101 <question>`, `!programming101 <question>`, `!se101 <question>`
+
+**Examples:**
+```
+/cs101 What is a variable?
+!cs101 How do loops work?
+!coding101 I'm getting a syntax error, what does that mean?
+!programming101 What's the difference between = and ==?
+```
+
+### ⚙️ Software Engineering 201 Professor
+Level up your coding with intermediate concepts, design patterns, and best practices.
+
+**Commands:**
+- Slash: `/cs201 <question>`
+- Prefix: `!cs201 <question>`, `!coding201 <question>`, `!programming201 <question>`, `!se201 <question>`
+
+**Examples:**
+```
+/cs201 What are design patterns?
+!cs201 How do I refactor this code?
+!coding201 What's the difference between composition and inheritance?
+!se201 When should I use async/await?
 ```
 
 ## Setup Instructions
