@@ -14,12 +14,14 @@ module.exports = {
     .addStringOption(option =>
       option
         .setName('professor')
-        .setDescription('Which professor (philosophy, latin, librarian)')
+        .setDescription('Which professor')
         .setRequired(true)
         .addChoices(
           { name: '🏛️ Philosophy', value: 'philosophy' },
           { name: '📜 Latin', value: 'latin' },
-          { name: '📚 Research/Library Science', value: 'librarian' }
+          { name: '📚 Research/Library Science', value: 'librarian' },
+          { name: '💻 Software Engineering 101', value: 'cs101' },
+          { name: '⚙️ Software Engineering 201', value: 'cs201' }
         )
     )
     .addIntegerOption(option =>
@@ -54,8 +56,8 @@ module.exports = {
       professorId = args[0]?.toLowerCase();
       weekNumber = args[1] ? parseInt(args[1]) : null;
       
-      if (!professorId || !['philosophy', 'latin', 'librarian'].includes(professorId)) {
-        await source.reply('Usage: `!homework <philosophy|latin|librarian> [week]`\nExample: `!homework philosophy 3`');
+      if (!professorId || !['philosophy', 'latin', 'librarian', 'cs101', 'cs201'].includes(professorId)) {
+        await source.reply('Usage: `!homework <philosophy|latin|librarian|cs101|cs201> [week]`\nExample: `!homework cs101 3`');
         return;
       }
     }

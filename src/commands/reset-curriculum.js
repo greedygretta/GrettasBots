@@ -11,12 +11,14 @@ module.exports = {
     .addStringOption(option =>
       option
         .setName('professor')
-        .setDescription('Which professor (philosophy, latin, librarian)')
+        .setDescription('Which professor')
         .setRequired(true)
         .addChoices(
           { name: '🏛️ Philosophy', value: 'philosophy' },
           { name: '📜 Latin', value: 'latin' },
-          { name: '📚 Research/Library Science', value: 'librarian' }
+          { name: '📚 Research/Library Science', value: 'librarian' },
+          { name: '💻 Software Engineering 101', value: 'cs101' },
+          { name: '⚙️ Software Engineering 201', value: 'cs201' }
         )
     )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
@@ -54,8 +56,8 @@ module.exports = {
     } else {
       professorId = args[0]?.toLowerCase();
       
-      if (!professorId || !['philosophy', 'latin', 'librarian'].includes(professorId)) {
-        await source.reply('Usage: `!reset-curriculum <philosophy|latin|librarian>`');
+      if (!professorId || !['philosophy', 'latin', 'librarian', 'cs101', 'cs201'].includes(professorId)) {
+        await source.reply('Usage: `!reset-curriculum <philosophy|latin|librarian|cs101|cs201>`');
         return;
       }
     }
